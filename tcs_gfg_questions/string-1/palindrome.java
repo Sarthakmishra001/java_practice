@@ -12,7 +12,23 @@
 // Explanation: "abc" does not read the same forwards and backwards,
 //  so it is not a palindrome.
 import java.util.*;
+public class palindrome {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
 
-public class one {
+        Boolean is_P = true;
+        int i=0;
+        int j =s.length()-1;
+        while(i<j){
+            if(s.charAt(i) != s.charAt(j)){
+                is_P =false;
+                break;
+            }
+            i++;
+                j--;
+        }
+        System.out.print(is_P);
+    }
     
 }
