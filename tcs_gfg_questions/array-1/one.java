@@ -1,3 +1,3 @@
-public class one {
+public class One {
     
 }
